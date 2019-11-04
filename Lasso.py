@@ -46,11 +46,11 @@ class ADMM:
         elif k < -a:
             return k + a
 
-    def run(self):
+    def fit(self):
         for loop in range(self.max_loop):
             self.update()
 
-    def fit(self):
+    def update(self):
         self.update_x()
         self.update_y()
         self.update_z()
